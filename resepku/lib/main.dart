@@ -25,10 +25,11 @@ class ResepKuApp extends StatelessWidget {
     return MaterialApp( 
       title: 'ResepKu', 
       debugShowCheckedModeBanner: false, 
-      theme: ThemeData(colorSchemeSeed: Colors.deepOrange), 
+      theme: ThemeData(colorSchemeSeed: Colors.deepOrange,fontFamily: 'Poppins', // didaftarkan di pubspec.yaml 
+      ),  
       // Tambahan untuk Latihan 1: Konfigurasi dark theme dan pembacaan state tema
       darkTheme: ThemeData(
-        colorSchemeSeed: Colors.deepOrange,
+        colorSchemeSeed: Colors.deepOrange,fontFamily: 'Poppins',
         brightness: Brightness.dark,
       ),
       themeMode: context.watch<ThemeProvider>().themeMode, // Membaca mode dari Provider
